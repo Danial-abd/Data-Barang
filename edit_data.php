@@ -108,7 +108,7 @@
         
         if($filename == ""){
             mysqli_query($koneksi, "UPDATE tb_barang SET id_barang='$id_barang',nama_barang='$nama_barang',harga_beli='$harga_beli',stok='$stok',jenis='$jenis',diskon='$diskon' WHERE
-            id_barang='$id'") or die(mysqli_error($kongit commit -m "first commit"eksi));
+            id_barang='$id'") or die(mysqli_error($koneksi));
             //header("location:dtbrg.php?alert=berhasil");
             echo "<div align='center'><h5>Data sedang di simpan, mohon tunggu...</h5></div>";
             echo "<meta http-equiv='refresh' content='1;http://localhost/uts/dtbrg.php'>";
